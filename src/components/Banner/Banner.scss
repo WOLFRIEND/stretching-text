@@ -1,0 +1,55 @@
+// Variables.
+$banner_width: 100px;
+$banner_height: 300px;
+$banner_padding: 16px;
+$icon_width: 100px;
+$icon_height: 100px;
+$color_grandis: #fed480;
+$color_shakespeare: #45a7cd;
+$color_sandy_brown: #f59977;
+
+// Banner icon.
+.banner__img {
+  width: $icon_width;
+  height: $icon_height;
+}
+
+// Banner.
+.banner {
+  height: $banner_height;
+  padding: $banner_padding;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to left, #fed480, #45a7cd);
+  border-color: #45a7cd #45a7cd #fed480 #fed480;
+}
+
+// Banner text container.
+.banner__text-container {
+  width: 100%;
+  height: calc( (#{$banner_height} / 2) - (#{$icon_height / 2}) - #{$banner_padding} );
+}
+
+// Banner text.
+.banner__text {
+  font-weight: 900;
+  text-align: center;
+  word-break: break-word;
+  text-shadow:
+          1.5px 0px 0px black,
+          -1.5px 0px 0px black,
+          0px 1.5px 0px black,
+          0px -1.5px 0px black;
+}
+
+.banner__text_1 {
+  color: $color_shakespeare;
+}
+
+.banner__text_2 {
+  color: $color_grandis;
+}

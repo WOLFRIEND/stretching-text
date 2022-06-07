@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "downlevelIteration": true,
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": false,
+    "incremental": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "tsBuildInfoFile": ".tsbuildinfo",
+    "baseUrl": "./",
+    "paths": {
+      "@app/*": ["src/*"]
+    }
+  },
+  "exclude": ["dist", "node_modules"],
+  "include": ["**/*.ts", "**/*.tsx"]
+}
