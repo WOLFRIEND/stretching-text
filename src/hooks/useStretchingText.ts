@@ -10,7 +10,7 @@ export const useStretchingText = (
       maxHeight: number,
       maxWidth: number,
       parentElement: HTMLElement,
-      maxCycles: number = 50;
+      maxCycles: number = 100;
 
     const textElements: NodeList = document.querySelectorAll(
       `.${textClassName}`
